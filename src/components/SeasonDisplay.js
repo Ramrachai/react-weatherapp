@@ -1,7 +1,7 @@
 import React from "react";
 import AcUnitIcon from "@material-ui/icons/AcUnit";
 import Brightness5Icon from "@material-ui/icons/Brightness5";
-
+import Time from "./Time";
 // determine season according to geolocation and month
 const getSeason = (lat, month) => {
   if (month > 2 && month < 9) {
@@ -30,7 +30,10 @@ const SeasonDisplay = props => {
   return (
     <div className={`season-display ${season}`}>
       <i className={`${season} topSeasonIcon `}> {iconName} </i>
-      <h2 className={`${season} seasonText  center`}> {seasonText} </h2>
+      <div className={`${season} center`}>
+        <Time />
+        <h1 className="seasonText">{seasonText} </h1>
+      </div>
       <i className={`${season} bottomSeasonIcon `}> {iconName} </i>
     </div>
   );
