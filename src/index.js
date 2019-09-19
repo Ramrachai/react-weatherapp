@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import SeasonDisplay from "./SeasonDisplay";
+import Spinner from "./components/spinner";
+
+import "./style.css";
 
 class App extends React.Component {
   constructor(props) {
@@ -23,7 +26,11 @@ class App extends React.Component {
     if (!this.state.lat && this.state.errorMessage) {
       return <div> Error: {this.state.errorMessage}</div>;
     }
-    return <div>Loading...</div>;
+    return (
+      <div className="loadingIcon">
+        <Spinner message="Please accept location request to get weather information" />
+      </div>
+    );
   }
 }
 

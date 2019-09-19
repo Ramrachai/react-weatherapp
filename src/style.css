@@ -1,0 +1,67 @@
+.summer {
+  color: rgb(255, 156, 43);
+}
+.winter {
+  color: rgb(2, 146, 182);
+}
+.season-display {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.season-display.summer {
+  background: rgba(255, 219, 121, 0.5);
+}
+.season-display.winter {
+  background: rgba(177, 237, 255, 0.5);
+}
+.seasonText {
+  font-size: 4.5vw;
+}
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -100%);
+}
+.topSeasonIcon {
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  /* transform: scale(3); */
+}
+.topSeasonIcon svg,
+.bottomSeasonIcon svg {
+  height: 8vw;
+  width: 8vw;
+}
+.bottomSeasonIcon {
+  position: absolute;
+  right: 15%;
+  bottom: 15%;
+  /* transform: scale(3); */
+}
+
+.loadingIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+.loadingIcon > div {
+  margin-left: -15px;
+}
+.loadingIcon p {
+  color: rgb(172, 8, 76);
+  text-align: center;
+  transform: translateX(-50%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wow {
+  background-attachment: fixed;
+}
+.kita {
+  color: red;
+}
